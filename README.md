@@ -1,7 +1,3 @@
-# AmongstTheStars
-A simple colony-building video game made with the Pygame engine 
+#My projects
 
-A 2D recreation of a text-based project from high school. Currently implements building construction, destruction, factions, and UI
-
-Hope to implement: Random daily events, temporary UI pop up for invalid actions
-
+A collection of my personal projects both big and small. 
