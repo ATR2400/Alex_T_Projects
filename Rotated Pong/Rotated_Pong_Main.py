@@ -22,7 +22,7 @@ ball=Ball(750,400)
 paddle_sprites=pygame.sprite.Group(left_paddle,right_paddle)
 ball_sprite=pygame.sprite.GroupSingle(ball)
 
-player1_score=9
+player1_score=0
 player2_score=0
 
 font=pygame.font.SysFont("Impact",50)
