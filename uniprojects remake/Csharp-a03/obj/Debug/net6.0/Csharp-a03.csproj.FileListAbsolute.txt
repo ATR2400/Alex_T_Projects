@@ -1,0 +1,15 @@
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.csproj.AssemblyReference.cache
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.AssemblyInfoInputs.cache
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.AssemblyInfo.cs
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.csproj.CoreCompileInputs.cache
+C:\Users\alext\Documents\c#\Csharp-a03\bin\Debug\net6.0\Csharp-a03.exe
+C:\Users\alext\Documents\c#\Csharp-a03\bin\Debug\net6.0\Csharp-a03.deps.json
+C:\Users\alext\Documents\c#\Csharp-a03\bin\Debug\net6.0\Csharp-a03.runtimeconfig.json
+C:\Users\alext\Documents\c#\Csharp-a03\bin\Debug\net6.0\Csharp-a03.dll
+C:\Users\alext\Documents\c#\Csharp-a03\bin\Debug\net6.0\Csharp-a03.pdb
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.dll
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\refint\Csharp-a03.dll
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.pdb
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\Csharp-a03.genruntimeconfig.cache
+C:\Users\alext\Documents\c#\Csharp-a03\obj\Debug\net6.0\ref\Csharp-a03.dll
