@@ -1,0 +1,8 @@
+#Quickcalc
+
+Quickcalc is a simple calculator made in Windows forms. It makes use of MxParser to accomplish mathematical computation. it currently includes rudimentary arithmetic
+(The BEDMAS functions) and a simple graphing calculator 
+
+Note: The graphing calculator was implemented using the winforms chart control. The chart control is meant for visualization of data, not graphing 
+equations. As such in order to allow asymptotes to exist the graph had to be set to point instead of line, otherwise any graphs with asymptotes would simply 
+look terrible. If I were to make an updated implementation I would use more sophisticated libraries that allow better graphing of algebraic equations 
