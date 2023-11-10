@@ -30,7 +30,7 @@ With step 2
 data points [X,Y] will be [0,0], [2,2], [4,16]
 
 
-Why does this matter?: A lower step value will result in a more accurate graph at the cost of longer time to display. This can become significant when graphing over larger intervals. A higher step value will result in a less accurate graph but with a quicker time to display. The inaccuracy becomes significant over short intervals.
+Why does this matter?: A lower step value will result in a more accurate graph at the cost of longer time to display. This can become significant when graphing over larger intervals. A higher step value will result in a less accurate graph but with a quicker time to display. The inaccuracy becomes significant over short intervals. Step values below 0.01 are not recommended.
 
 ___________________________________
 
