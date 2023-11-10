@@ -57,7 +57,7 @@ namespace Quickcalc
             }
 
             // only allow one negative sign
-            if (e.KeyChar == '-' && (sender as TextBox).Text.IndexOf('-') > -1)
+            if (e.KeyChar == '-' && ((sender as TextBox).Text.IndexOf('-') > -1 || (sender as TextBox).Text.Length > 0))
             {
                 e.Handled = true;
             }
@@ -78,7 +78,7 @@ namespace Quickcalc
             }
 
             // only allow one negative sign
-            if (e.KeyChar == '-' && (sender as TextBox).Text.IndexOf('-') > -1)
+            if (e.KeyChar == '-' && ((sender as TextBox).Text.IndexOf('-') > -1 || (sender as TextBox).Text.Length > 0))
             {
                 e.Handled = true;
             }
@@ -121,29 +121,49 @@ namespace Quickcalc
             fs.Points.Clear();
 
 
+
             Expression expression = new Expression(equation);
 
 
-
-            for (float i=leftValue; i<=rightValue; i+=stepValue)
+            if (leftValue < rightValue && stepValue>0) 
             {
-                expression.removeAllArguments();
-                expression.addArguments(new Argument("x", i));
-
-                double result = expression.calculate();
-
-
-
-                if(!double.IsNaN(result))
+                errorBox.Visible = false;
+                for (float i = leftValue; i <= rightValue; i += stepValue)
                 {
-                    fs.Points.Add(new DataPoint(i, result));
-                }
+                    expression.removeAllArguments();
+                    expression.addArguments(new Argument("x", i));
 
-                else
-                {
-                    fs.Points.Add(new DataPoint(i, double.NaN));
+                    double result = expression.calculate();
+
+
+
+                    if (!double.IsNaN(result))
+                    {
+                        fs.Points.Add(new DataPoint(i, result));
+                    }
+
+                    else
+                    {
+                        fs.Points.Add(new DataPoint(i, double.NaN));
+                    }
+
                 }
             }
+
+
+
+            else if(leftValue>=rightValue)
+            {
+                errorBox.Visible = true;
+                errorBox.Text = "ERROR: Left interval must be less than right interval";
+            }
+
+            else
+            {
+                errorBox.Visible = true;
+                errorBox.Text = "ERROR: Step value must be greater than 0";
+            }
+            
 
             pv.Model.Series.Add(fs);
           

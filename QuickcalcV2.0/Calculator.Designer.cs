@@ -37,6 +37,7 @@
             this.step = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // leftInterval
@@ -123,11 +124,22 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Equation";
             // 
+            // errorBox
+            // 
+            this.errorBox.ForeColor = System.Drawing.Color.Red;
+            this.errorBox.Location = new System.Drawing.Point(12, 2);
+            this.errorBox.Multiline = true;
+            this.errorBox.Name = "errorBox";
+            this.errorBox.Size = new System.Drawing.Size(228, 49);
+            this.errorBox.TabIndex = 9;
+            this.errorBox.Visible = false;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.errorBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.step);
@@ -157,5 +169,6 @@
         private Label step;
         private TextBox textBox1;
         private Label label1;
+        private TextBox errorBox;
     }
 }
